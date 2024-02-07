@@ -66,8 +66,8 @@ const IconList: React.FC<IconListProps> = ({
 }) => (
   <div className="row flex items-center justify-between gap-4">
     <div className="col flex gap-2">
-      {Object.values(NoteType).map((type) => (
-        <NoteIcon
+        {Object.values(NoteType).filter(type => type.key !== 'list').map((type) => (
+            <NoteIcon
           key={type.label}
           type={type.key}
           isSelected={selectedType === type.key}
