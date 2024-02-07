@@ -29,6 +29,34 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+
+## Features
+
+- A note input field that allows for plaintext input
+- The notes have the following properties:
+    - Timestamp
+    - User that created it
+    - Type (Message/Phone/Coffee/Beer/Meeting Note)
+- There should be an activity feed that lists all of the notes in chronological order
+    - It should display:
+        - User that wrote the note
+        - Relative Timestamp
+        - The note
+    - It should have the following actions:
+        - Delete
+- A good project is sufficiently covered by unit tests
+
+## Implementation notes
+
+- Write regular code with everything you would use at work
+- Expected duration is 50 mins - 2 hours
+- The current user (You) and the contact (Milton Romaguera) can be passed as properties that are hardcoded at the upper layer
+- Do not write any backend, store data as a local state
+- Focus more on code structure rather than being pixel perfect
+- Use TypeScript and React.
+- Anything that can be found on npmjs.com is allowed
+- Typing a new note or submitting it shall not cause rerenders of other elements
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
