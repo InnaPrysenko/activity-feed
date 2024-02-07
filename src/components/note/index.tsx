@@ -17,7 +17,7 @@ const NoteComponent: React.FC<NoteProps> = ( { note, isLast, isFirst } ) => {
     const { contactUser, currentUser, deleteNote } = useActivityFeed();
 
     return (
-        <div className="w-full flex gap-4 relative">
+        <div className="w-full flex gap-x-2.5 gap-y-4 md:gap-4 relative">
             <Timeline
                 dateTime={note.timestamp}
                 noteKey={note.type.key}
@@ -41,7 +41,7 @@ const NoteBlock: React.FC<{
 }> = ( { note, currentUser, contactUser, onDeleteNote } ) => {
     return (
         <div
-            className={`bg-foreground-300 flex gap-4 p-4 items-center justify-between group text-sm w-full mb-4`}
+            className={`bg-foreground-300 flex gap-4 p-4 items-center justify-between group text-xs md:text-sm w-full mb-4`}
         >
             <div className="flex flex-col">
                 <div className="row">

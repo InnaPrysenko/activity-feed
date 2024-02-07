@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Note, NoteTypeProps } from "@/types";
 import { Button } from "../common/button";
 import { useActivityFeed } from "@/context/activity-feed-context";
-import { NoteType } from "../../constants";
+import { NoteType } from '@/constants';
 import NoteIcon from "../note-icon";
 import { Timeline } from "../note/timeline";
 import { ChevronRight } from "lucide-react";

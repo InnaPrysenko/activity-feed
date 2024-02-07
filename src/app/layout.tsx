@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="min-h-screen h-dvh flex flex-col ">
           <NavBar />
-          <main className="flex flex-col items-center justify-between p-8">
+          <main className="flex flex-col items-center justify-between p-4 md:p-8">
             {children}
           </main>
           <Footer />

@@ -17,7 +17,7 @@ export const Timeline: React.FC<{
 
   return (
     <div className="timeline text-xs flex h-full gap-4 mt-2 z-10">
-      <div className="label w-2 mt-2">{dateTime ? relativeDate : ""}</div>
+      <div className="label w-2 md:mt-2">{dateTime ? relativeDate : ""}</div>
       <div className="icon relative h-full">
         <NoteIcon
           type={noteKey}
