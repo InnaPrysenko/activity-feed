@@ -18,11 +18,11 @@ export default function Home() {
               contactUser={contactUser}
               initialNotes={dummyNotes}
             />
-            {/* <ActivityFeed
+             <ActivityFeed
               currentUser={currentUser}
               contactUser={inna}
               initialNotes={innasNotes}
-            /> */}
+            />
           </div>
         </View>
       </div>
