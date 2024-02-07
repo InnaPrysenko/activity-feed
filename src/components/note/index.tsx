@@ -57,7 +57,7 @@ const NoteBlock: React.FC<{
             <DropdownMenu.Root>
                 <DropdownMenu.Trigger asChild>
                     <button
-                        className="rounded-full w-[35px] h-[35px] inline-flex bg-cyan-500 items-center justify-center text-white outline-none"
+                        className="rounded-full w-[35px] h-[35px] inline-flex bg-cyan-500 lg:opacity-0 items-center justify-center text-white outline-none group-hover:opacity-100 transition-all duration-300 ease-in-out"
                         aria-label="Customise options"
                     >
                         <ChevronDown/>
@@ -77,8 +77,6 @@ const NoteBlock: React.FC<{
                             </button>
 
                         </DropdownMenu.Item>
-
-
                         <DropdownMenu.Arrow className="fill-white"/>
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
